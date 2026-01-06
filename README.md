@@ -18,6 +18,8 @@ It detects faces, processes facial expressions, and predicts emotions **accurate
 Built with strong fundamentals — no shortcuts, no gimmicks.
 
 > 🎯 Goal: **High accuracy + stable emotion prediction in real time**
+>           **Power BI integration for live dashboards (team mood trends, analytics, visualizations)**
+> 
 
 ---
 
@@ -96,11 +98,17 @@ Each face is:
 ## 📁 Project Structure
 team_mood_project/
 │
-├── face_emotion/
+├── face_emotion/ datasets /
 │ └── face_detect.py # Real-time detection code
+  └── check_classes.py
+  └── train_emotion_model.py
 │
 ├── models/
-│ └── emotion_model.h5 # Trained CNN model
+│ └── inference.py
+  └── face_emotion_model_transfer.keras  # Trained CNN model
+  └── labels.json
+  └── confusion_matrix.png
+  └── training_curves.png    
 │
 ├── logs/ # Runtime logs
 │
@@ -123,6 +131,7 @@ Make sure the following are installed:
 - 💻 Windows / Linux / macOS
 
 > ⚠️ TensorFlow is most stable with Python 3.10. Avoid newer Python versions.
+> Dependencies include: tensorflow, opencv-python, numpy, pandas, matplotlib, requests (for Power BI integration), etc.
 
 ---
 

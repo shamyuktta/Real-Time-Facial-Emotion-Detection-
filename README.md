@@ -85,16 +85,19 @@ Each face is:
 
 ## 🧰 Tech Stack
 
-| Category | Tools |
-|-------|------|
-| Language | Python |
-| Deep Learning | TensorFlow, Keras |
-| Computer Vision | OpenCV |
+| Category | Tools | Versions|
+|-------|------|---------|
+| Language | Python |3.10|
+| Deep Learning | TensorFlow, Keras |2.20.0,2.20.1|
+| Computer Vision | OpenCV |4.12.88.0|
 | Face Detection | Haar Cascade |
-| Utilities | NumPy, Deque |
+| Utilities | NumPy, Deque |2.2.0|
+
 
 ---
+( ** Refer "requirements.txt" for packages installed versions** ) 
 
+---
 ## 📁 Project Structure
 team_mood_project/
 │
